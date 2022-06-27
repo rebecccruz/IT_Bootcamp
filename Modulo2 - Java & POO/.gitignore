@@ -1,0 +1,12 @@
+# Compiled class file
+.class
+
+# IDE
+.idea/
+
+# macOS
+.DS_Store
+.pre-commit-config.yaml
+
+# Project exclude paths
+/out/

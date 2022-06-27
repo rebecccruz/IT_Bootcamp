@@ -1,4 +1,4 @@
-package aula01;
+package a1_pratica1;
 
 public class PraticaIntegradora1 {
 
@@ -14,9 +14,6 @@ public class PraticaIntegradora1 {
                 tempMin = temperatura[i][0];
                 cidadeMin = cidades[i];
             }
-        }
-
-        for (int i = 0; i < temperatura.length; i++){
             if (tempMax < temperatura[i][1]){
                 tempMax = temperatura[i][1];
                 cidadeMax = cidades[i];

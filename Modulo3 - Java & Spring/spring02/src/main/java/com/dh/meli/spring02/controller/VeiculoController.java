@@ -1,7 +1,8 @@
 package com.dh.meli.spring02.controller;
 
+import com.dh.meli.spring02.dto.VeiculoDto;
 import com.dh.meli.spring02.model.Veiculo;
-import com.dh.meli.spring02.repository.VeiculoRepo;
+import com.dh.meli.spring02.service.VeiculoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -14,24 +15,42 @@ import java.util.List;
 public class VeiculoController {
 
     @Autowired
-    private VeiculoRepo repo;
+    private VeiculoService service;
 
     @GetMapping("/{placa}")
-    public ResponseEntity<Veiculo> getVeiculo(@PathVariable String placa){
-        Veiculo v = repo.getVeiculo(placa);
-        return ResponseEntity.ok(v);
+    public ResponseEntity<VeiculoDto> getVeiculo(@PathVariable String placa) {
+        return ResponseEntity.ok().body(service.getVeiculo(placa));
     }
 
     @GetMapping("/all")
-    public ResponseEntity<List<Veiculo>> getAllVeiculo(){
-        List<Veiculo> lista = repo.getAllVeiculo();
+    public ResponseEntity<List<VeiculoDto>> getAllVeiculo(){
+        List<VeiculoDto> lista = service.getAllVeiculo();
+        return ResponseEntity.ok(lista);
+    }
+
+    @GetMapping("/alloder")
+    public ResponseEntity<List<VeiculoDto>> getAllVeiculoOrder(){
+        List<VeiculoDto> lista = service.getAllOrderByValor();
+        return ResponseEntity.ok(lista);
+    }
+
+    @GetMapping("/allbymodel")
+    public ResponseEntity<List<VeiculoDto>> getAllVeiculoOrderByModelo(){
+        List<VeiculoDto> lista = service.getAllOrderByModelo();
+        return ResponseEntity.ok(lista);
+    }
+
+
+    @GetMapping("/bymodel/{modelo}")
+    public ResponseEntity<List<VeiculoDto>> getByModelo(@PathVariable String modelo){
+        List<VeiculoDto> lista = service.getByModelo(modelo);
         return ResponseEntity.ok(lista);
     }
 
     @PostMapping
     @ResponseStatus(HttpStatus.OK)
     public void saveVeiculo(@RequestBody Veiculo novoVeiculo){
-        repo.saveVeiculo(novoVeiculo);
+        service.saveVeiculo(novoVeiculo);
     }
 
 }

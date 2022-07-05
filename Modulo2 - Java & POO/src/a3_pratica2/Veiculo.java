@@ -2,8 +2,8 @@ package a3_pratica2;
 
 public class Veiculo {
 
-    String modelo, marca;
-    double preco;
+    private String modelo, marca;
+    private double preco;
 
     public Veiculo(String marca, String modelo, double preco) {
         this.modelo = modelo;
@@ -33,5 +33,10 @@ public class Veiculo {
 
     public void setPreco(double preco) {
         this.preco = preco;
+    }
+
+    @Override
+    public String toString(){
+        return marca + " " + modelo + "" + preco;
     }
 }

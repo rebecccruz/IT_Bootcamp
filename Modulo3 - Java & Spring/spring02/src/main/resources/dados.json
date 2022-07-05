@@ -1,0 +1,12 @@
+[
+  {
+    "placa": "abc 1234",
+    "modelo": "Fusca",
+    "valor": 1000
+  },
+  {
+    "placa": "abc 5678",
+    "modelo": "Gol",
+    "valor": 1500
+  }
+]

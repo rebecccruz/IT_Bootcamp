@@ -2,7 +2,7 @@ package exemplointerface.util;
 
 import exemplointerface.modelo.Conta;
 
-public class MongoDB implements BancoDeDados{
+public class MongoDB implements BancoDeDados {
 
     @Override
     public void gravar(Conta conta) {

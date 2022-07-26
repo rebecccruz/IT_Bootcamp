@@ -36,7 +36,7 @@ public class Veiculo {
     }
 
     @Override
-    public String toString(){
+    public String toString() {
         return marca + " " + modelo + "" + preco;
     }
 }

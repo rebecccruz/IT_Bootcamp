@@ -8,8 +8,8 @@ public class Pessoa {
     double peso;
     int altura;
 
-// exercicio 2 - criar construtores
-    public Pessoa(){
+    // exercicio 2 - criar construtores
+    public Pessoa() {
     }
 
     public Pessoa(String nome, int idade, String id) {
@@ -27,19 +27,18 @@ public class Pessoa {
     }
 
     //exercicio 5 - calcularIMC e maioridade
-    public double calcularIMC(){
-        double imc = peso/Math.pow(2,altura);
+    public double calcularIMC() {
+        double imc = peso / Math.pow(2, altura);
 
         if (imc < 20) {
             return -1;
-        }
-        else if (imc >= 20 && imc <=25) {
+        } else if (imc >= 20 && imc <= 25) {
             return 0;
         }
         return 1;
     }
 
-    public boolean ehMaioridade(){
+    public boolean ehMaioridade() {
         if (idade >= 18) {
             return true;
         }

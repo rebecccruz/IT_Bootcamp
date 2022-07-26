@@ -1,6 +1,6 @@
 package a3_pratica1.ex3;
 
-public class Gato extends Animal implements Carnivoros{
+public class Gato extends Animal implements Carnivoros {
 
     @Override
     public String emitirSom() {

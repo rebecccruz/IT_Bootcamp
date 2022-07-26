@@ -11,11 +11,11 @@ public abstract class Conta {
         this.numero = numero;
     }
 
-    public void depositar(double valor){
+    public void depositar(double valor) {
         saldo += valor;
     }
 
-    public void sacar(double valor){
+    public void sacar(double valor) {
         saldo -= valor;
     }
 
@@ -27,7 +27,7 @@ public abstract class Conta {
         return saldo;
     }
 
-    public void gravar(BancoDeDados banco){
+    public void gravar(BancoDeDados banco) {
         banco.gravar(this);
     }
 

@@ -1,6 +1,6 @@
 package exemplointerface.modelo;
 
-public class ContaEspecial extends Conta{
+public class ContaEspecial extends Conta {
 
     private double limite;
 
@@ -12,6 +12,6 @@ public class ContaEspecial extends Conta{
     @Override
     public void sacar(double valor) {
         if (valor <= getSaldo() + limite)
-        super.sacar(valor);
+            super.sacar(valor);
     }
 }

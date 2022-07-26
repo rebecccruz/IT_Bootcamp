@@ -29,8 +29,7 @@ public class VeiculoRepo {
                     return v;
                 }
             }
-        }
-        catch (Exception ex) {
+        } catch (Exception ex) {
 
         }
 
@@ -54,7 +53,7 @@ public class VeiculoRepo {
 
     public void saveVeiculo(Veiculo novoVeiculo) {
         ObjectMapper mapper = new ObjectMapper();
-        ObjectWriter writer = mapper.writer (new DefaultPrettyPrinter());
+        ObjectWriter writer = mapper.writer(new DefaultPrettyPrinter());
         List<Veiculo> listaAtual = null;
         try {
             listaAtual = Arrays.asList

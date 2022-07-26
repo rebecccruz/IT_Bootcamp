@@ -8,9 +8,9 @@ public class Main {
 
         Garagem garagem = new Garagem();
 
-        garagem.addVeiculo(new Veiculo("Ford","Fiesta", 1000));
-        garagem.addVeiculo(new Veiculo("Ford","Focus", 1200));
-        garagem.addVeiculo(new Veiculo("Ford","Explorer", 2500));
+        garagem.addVeiculo(new Veiculo("Ford", "Fiesta", 1000));
+        garagem.addVeiculo(new Veiculo("Ford", "Focus", 1200));
+        garagem.addVeiculo(new Veiculo("Ford", "Explorer", 2500));
 
 
         System.out.println("Lista ordenada por valor: ");

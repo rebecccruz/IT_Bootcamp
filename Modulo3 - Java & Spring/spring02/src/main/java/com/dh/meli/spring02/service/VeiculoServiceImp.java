@@ -48,7 +48,7 @@ public class VeiculoServiceImp implements VeiculoService {
     public List<VeiculoDto> getAllOrderByModelo() {
         List<Veiculo> listaVeiculos = repo.getAllVeiculo();
         return listaVeiculos.stream()
-                .sorted( (v1,v2) -> v1.getModelo().compareTo(v2.getModelo()))
+                .sorted((v1, v2) -> v1.getModelo().compareTo(v2.getModelo()))
                 .map(VeiculoDto::new)
                 .collect(Collectors.toList());
     }
@@ -57,7 +57,7 @@ public class VeiculoServiceImp implements VeiculoService {
     public List<VeiculoDto> getByModelo(String modelo) {
         List<Veiculo> listaVeiculos = repo.getAllVeiculo();
         return listaVeiculos.stream()
-                .filter( v -> v.getModelo().equalsIgnoreCase(modelo))
+                .filter(v -> v.getModelo().equalsIgnoreCase(modelo))
                 .map(VeiculoDto::new)
                 .collect(Collectors.toList());
     }

@@ -23,7 +23,7 @@ public class Garagem {
         this.veiculos = veiculos;
     }
 
-    public void addVeiculo(Veiculo veiculo){
+    public void addVeiculo(Veiculo veiculo) {
         veiculos.add(veiculo);
     }
 

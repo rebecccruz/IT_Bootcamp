@@ -19,7 +19,7 @@ public class Distribuidora {
 //<comando>
 //}
 
-        for(Produto produto:produtos){
+        for (Produto produto : produtos) {
             precoFinal += produto.getPreco();
         }
 

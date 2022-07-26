@@ -22,7 +22,7 @@ public class Hello {
 
     @PostMapping
     public ResponseEntity<UserDto> getUser(@RequestBody User user) {
-        if(user.getId() == 123) {
+        if (user.getId() == 123) {
             UserDto userDto = new UserDto(user);
             return new ResponseEntity(userDto, HttpStatus.OK);
         }

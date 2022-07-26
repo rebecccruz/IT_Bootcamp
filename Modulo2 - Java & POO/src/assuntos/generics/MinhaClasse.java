@@ -7,7 +7,7 @@ public class MinhaClasse<T> {
         this.obj = obj;
     }
 
-    public T getObj(){
+    public T getObj() {
         return obj;
     }
 }

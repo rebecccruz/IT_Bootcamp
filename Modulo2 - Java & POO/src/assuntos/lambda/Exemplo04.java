@@ -2,11 +2,11 @@ package assuntos.lambda;
 
 public class Exemplo04 {
 
-    interface InterffaceString{
+    interface InterffaceString {
         String executar(String str);
     }
 
-    public static void imprimir(String texto, InterffaceString inter){
+    public static void imprimir(String texto, InterffaceString inter) {
         String resultado = inter.executar(texto);
         System.out.println(resultado);
     }

@@ -13,7 +13,7 @@ import java.time.LocalDateTime;
 public class NotFoundExHandler {
 
     @ExceptionHandler(NotFoundException.class)
-    public ResponseEntity<NotFoundExceptionDetalhes> handlerNotFoundEx(NotFoundException ex){
+    public ResponseEntity<NotFoundExceptionDetalhes> handlerNotFoundEx(NotFoundException ex) {
         return new ResponseEntity<>(
                 NotFoundExceptionDetalhes.builder()
                         .titulo("Objeto nao encontrado")

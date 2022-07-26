@@ -2,16 +2,16 @@ package a2_pratica2.ex2;
 
 public class Produto {
 
-        String nome;
-        double preco;
+    String nome;
+    double preco;
 
-    public Produto (String nome, double preco){
+    public Produto(String nome, double preco) {
         this.nome = nome;
         this.preco = preco;
     }
 
-    public double calcular(int quantidadeDeProdutos){
-        return preco*quantidadeDeProdutos;
+    public double calcular(int quantidadeDeProdutos) {
+        return preco * quantidadeDeProdutos;
     }
 
     public String getNome() {

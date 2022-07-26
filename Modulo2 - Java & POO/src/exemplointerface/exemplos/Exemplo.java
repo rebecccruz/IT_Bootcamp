@@ -7,10 +7,10 @@ public class Exemplo {
 
 }
 
-class Vetor{
+class Vetor {
     private int numeros[] = new int[10];
 
-    public void adicionar(int n){
+    public void adicionar(int n) {
 
     }
 }

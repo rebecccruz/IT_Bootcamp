@@ -13,7 +13,7 @@ public class AppConta {
 
     public static void main(String[] args) {
         ContaCorrente cc1 = new ContaCorrente(111);
-        ContaEspecial ce1 = new ContaEspecial(222,1000);
+        ContaEspecial ce1 = new ContaEspecial(222, 1000);
 
         MySQL mySQL = new MySQL();
         MongoDB mongoDB = new MongoDB();
@@ -25,14 +25,14 @@ public class AppConta {
         contas.add(cc1);
         contas.add(ce1);
 
-        mapadeContas.put(cc1.getNumero(),cc1);
-        mapadeContas.put(ce1.getNumero(),ce1);
+        mapadeContas.put(cc1.getNumero(), cc1);
+        mapadeContas.put(ce1.getNumero(), ce1);
 
 //        for (int i = 0; i < contas.size(); i++){
 //            System.out.println("Conta: " + contas.get(i).getNumero());
 //        }
 
-        for (Conta c : contas){
+        for (Conta c : contas) {
             System.out.println("Conta: " + c.getNumero());
         }
 

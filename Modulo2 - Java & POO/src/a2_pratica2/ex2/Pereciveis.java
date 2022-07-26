@@ -1,6 +1,6 @@
 package a2_pratica2.ex2;
 
-public class Pereciveis extends Produto{
+public class Pereciveis extends Produto {
     int diasParaVencer;
 
     public Pereciveis(String nome, double preco, int diasParaVencer) {
@@ -10,13 +10,13 @@ public class Pereciveis extends Produto{
 
     @Override
     public double calcular(int quantidadeDeProdutos) {
-        if(diasParaVencer == 1){
-            return (getPreco()* quantidadeDeProdutos)/4;
-        }else if(diasParaVencer == 2){
-            return (getPreco()* quantidadeDeProdutos)/3;
-        }else if(diasParaVencer == 3){
-            return (getPreco() * quantidadeDeProdutos)/2;
-        }else{
+        if (diasParaVencer == 1) {
+            return (getPreco() * quantidadeDeProdutos) / 4;
+        } else if (diasParaVencer == 2) {
+            return (getPreco() * quantidadeDeProdutos) / 3;
+        } else if (diasParaVencer == 3) {
+            return (getPreco() * quantidadeDeProdutos) / 2;
+        } else {
             return 0;
         }
     }
